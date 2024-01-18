@@ -1,0 +1,13 @@
+[package]
+name = "zookeeper-client"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+path = "src/zookeeper.rs"
+bench = false
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+# Add dependencies for a ZooKeeper client library if available
