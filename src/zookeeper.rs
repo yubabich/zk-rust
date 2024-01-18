@@ -11,23 +11,23 @@ pub struct ZkClient {
 }
 
 impl ZkClient {
-    pub async fn connect(address: &str, timeout: Duration) -> Result<Self, ZkError> {
+    pub fn connect(address: &str, timeout: Duration) -> Result<Self, ZkError> {
         // Establish a connection to the ZooKeeper server
     }
 
-    pub async fn create(&self, path: &str, data: &[u8]) -> Result<String, ZkError> {
+    pub fn create(&self, path: &str, data: &[u8]) -> Result<String, ZkError> {
         // Create a node at the specified path with the given data
     }
 
-    pub async fn read(&self, path: &str) -> Result<Vec<u8>, ZkError> {
+    pub fn read(&self, path: &str) -> Result<Vec<u8>, ZkError> {
         // Read data from the node at the specified path
     }
 
-    pub async fn update(&self, path: &str, data: &[u8]) -> Result<(), ZkError> {
+    pub fn update(&self, path: &str, data: &[u8]) -> Result<(), ZkError> {
         // Update the data of the node at the specified path
     }
 
-    pub async fn delete(&self, path: &str) -> Result<(), ZkError> {
+    pub fn delete(&self, path: &str) -> Result<(), ZkError> {
         // Delete the node at the specified path
     }
 
